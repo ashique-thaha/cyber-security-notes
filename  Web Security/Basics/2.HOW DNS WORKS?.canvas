@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"fb15b6af2244fbb1","type":"text","text":"\tWHAT IS DNS?🤔","x":-116,"y":53,"width":351,"height":102,"color":"4"},
+		{"id":"7dcd15e0ffcf4738","type":"text","text":".com TLD will give us  the authoritative name servers for the google.com.","x":-202,"y":-2070,"width":512,"height":107},
+		{"id":"b744f9ebdf535045","type":"text","text":"The Resolver looks for authorative name server which .com TLD told about. There will be multiple name servers, for to balance load","x":-302,"y":-2767,"width":424,"height":187},
+		{"id":"6d5be48f183e31d2","type":"text","text":"Now the name server will provide the correspondent ip to the name google.com eg:52.11.123.330","x":-302,"y":-3081,"width":420,"height":157},
+		{"id":"7b45f9e4a928c4a5","type":"text","text":"How DNS Works?🌐","x":-86,"y":-78,"width":283,"height":60},
+		{"id":"6cea6b994fce603d","type":"text","text":"So the ip address of the domain will be cached in ISP, OS etc for future usage, so they don't have to make this road trip again.","x":269,"y":-3062,"width":564,"height":138},
+		{"id":"8257711555dcb4ea","type":"text","text":"How could .com TLD make the connection? There are so many .COM domains!.When a domain is purchased, the domain registrar reserves the name and communicates to the TLD registry the authoritative name servers","x":-92,"y":-2470,"width":629,"height":222},
+		{"id":"b3076f3943bab407","type":"text","text":"so our search query will travel across the wire 🚎 and will reach the resolver's inbox.","x":-773,"y":-937,"width":364,"height":170},
+		{"id":"17efac57816387b3","type":"text","text":"The browser who need to get results quick⚡️ will ask the OS for help. \"hey do you know google.com\"?. so the OS  will check for google.com in cache, if not found, the OS will call the resolver.","x":-167,"y":-767,"width":446,"height":207},
+		{"id":"f65f2565b5cf9e18","type":"text","text":"Who is resolver🤔?","x":-452,"y":-1209,"width":285,"height":98},
+		{"id":"7c090d3181cfc54d","type":"text","text":"Computers and other devices communicate using IP addresses to identify each other on the internet🛜.\nBut we humans🕺🏻 can't remember such large number ","x":-234,"y":260,"width":469,"height":120},
+		{"id":"9b33b5a8ab9d24b2","type":"text","text":"So what dns do is that it just take these ip addresses and convert them to names🕸️.\neg: google , yahoo etc.","x":1,"y":560,"width":382,"height":130},
+		{"id":"cf3f82d1fe59f654","type":"text","text":"So basically DNS is the address book 📗 of websites. ","x":38,"y":820,"width":308,"height":136},
+		{"id":"71555d3c795b1f25","type":"text","text":"Imagine a scenario where a user🤸🏻‍♂️ is searching🔎 for google.com in his browser.","x":-240,"y":-340,"width":355,"height":145},
+		{"id":"824fe8ed5d32364e","type":"text","text":"The resolver is a server 💾 which is usually your ISP (Internet Service Provider)🛜. If the resolver doesn't know google.com, resolver will ask the root.\nAll resolvers must know one thing: where to locate the root server👀.","x":-40,"y":-1214,"width":446,"height":206},
+		{"id":"6b481e09fe9bf156","type":"text","text":"The root is a server 💾who knows where to locate 🔎the .COM TLD (top level domain)server.  13 root servers exists today.Root servers sit at the top of the DNS hierarchy.","x":-375,"y":-1612,"width":417,"height":165},
+		{"id":"cbec3e1e2feccb38","type":"text","text":"The root will give the address of .com TLD where we can find ip address to google.Some other TLDs like this are .org , .gov etc.","x":183,"y":-1843,"width":305,"height":143}
+	],
+	"edges":[
+		{"id":"4cfac17f1639a6f9","fromNode":"7b45f9e4a928c4a5","fromSide":"left","toNode":"fb15b6af2244fbb1","toSide":"left"},
+		{"id":"2bd881e8fba904fa","fromNode":"fb15b6af2244fbb1","fromSide":"right","toNode":"7c090d3181cfc54d","toSide":"right"},
+		{"id":"f60e1cbb32f75a88","fromNode":"7c090d3181cfc54d","fromSide":"bottom","toNode":"9b33b5a8ab9d24b2","toSide":"top"},
+		{"id":"c4f8bdc21628f9a9","fromNode":"9b33b5a8ab9d24b2","fromSide":"left","toNode":"cf3f82d1fe59f654","toSide":"left"},
+		{"id":"89edc82037705e4a","fromNode":"7b45f9e4a928c4a5","fromSide":"top","toNode":"71555d3c795b1f25","toSide":"bottom"},
+		{"id":"8217664e01d2eef0","fromNode":"71555d3c795b1f25","fromSide":"top","toNode":"17efac57816387b3","toSide":"bottom"},
+		{"id":"77ef3204145b4cee","fromNode":"17efac57816387b3","fromSide":"left","toNode":"b3076f3943bab407","toSide":"right"},
+		{"id":"74d38d0ff7074c71","fromNode":"b3076f3943bab407","fromSide":"top","toNode":"f65f2565b5cf9e18","toSide":"left"},
+		{"id":"4d2820633352d525","fromNode":"f65f2565b5cf9e18","fromSide":"right","toNode":"824fe8ed5d32364e","toSide":"left"},
+		{"id":"56c83fec7d2b50c9","fromNode":"824fe8ed5d32364e","fromSide":"top","toNode":"6b481e09fe9bf156","toSide":"bottom"},
+		{"id":"bb63c8a5817b9a98","fromNode":"6b481e09fe9bf156","fromSide":"right","toNode":"cbec3e1e2feccb38","toSide":"left"},
+		{"id":"767c960c818bcb6a","fromNode":"cbec3e1e2feccb38","fromSide":"top","toNode":"7dcd15e0ffcf4738","toSide":"bottom"},
+		{"id":"0655755502e93dd7","fromNode":"7dcd15e0ffcf4738","fromSide":"top","toNode":"8257711555dcb4ea","toSide":"bottom"},
+		{"id":"72858b3b0957c55e","fromNode":"8257711555dcb4ea","fromSide":"top","toNode":"b744f9ebdf535045","toSide":"bottom"},
+		{"id":"cfc16d64c771a2b5","fromNode":"b744f9ebdf535045","fromSide":"top","toNode":"6d5be48f183e31d2","toSide":"bottom"},
+		{"id":"85e0f1c93af276ba","fromNode":"6d5be48f183e31d2","fromSide":"right","toNode":"6cea6b994fce603d","toSide":"left"}
+	]
+}
